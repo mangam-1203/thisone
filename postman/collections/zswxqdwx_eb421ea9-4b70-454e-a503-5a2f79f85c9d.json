@@ -1,0 +1,152 @@
+{
+    "info": {
+        "_postman_id": "1a11bc90-2ccc-4a14-90e4-9106762d2a62",
+        "name": "zswxqdwx",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "user",
+            "item": [
+                {
+                    "name": "Sample endpoint: Returns details about a particular user",
+                    "id": "59908c35-85fc-4559-8ed5-e59c57ab5231",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=-90901489",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "-90901489",
+                                    "description": "(Required) ID of the user"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "62966009-2bad-47b2-9ad7-f17aca218278",
+                            "name": "Sample response: Details about a user by ID",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "description": "Added as a part of security scheme: basic",
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{baseUrl}}/user?id=-90901489",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "user"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-90901489"
+                                        }
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "A link to the next page of responses",
+                                    "key": "x-next",
+                                    "value": "ut officia fugiat"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "{\n \"id\": -66564228,\n \"name\": \"incididunt dol\",\n \"tag\": \"officia sunt\"\n}"
+                        },
+                        {
+                            "id": "9339ed32-e02a-4b70-b99b-14c5603e3389",
+                            "name": "Unexpected error",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "description": "Added as a part of security scheme: basic",
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{baseUrl}}/user?id=-90901489",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "user"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-90901489"
+                                        }
+                                    ]
+                                }
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "{\n \"code\": -65059228,\n \"message\": \"cupidatat exercitation elit\"\n}"
+                        }
+                    ]
+                }
+            ],
+            "id": "11dd4564-3ad1-4c5b-a341-cab65f4d08a7"
+        }
+    ],
+    "auth": {
+        "type": "basic",
+        "basic": [
+            {
+                "key": "username",
+                "value": "<Basic Auth Username>",
+                "type": "string"
+            },
+            {
+                "key": "password",
+                "value": "<Basic Auth Password>",
+                "type": "string"
+            }
+        ]
+    },
+    "variable": [
+        {
+            "id": "11d84080-ba26-456c-9813-27d57cf1a052",
+            "key": "baseUrl",
+            "value": "http://petstore.swagger.io/v1",
+            "type": "string"
+        }
+    ]
+}
